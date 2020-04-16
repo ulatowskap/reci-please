@@ -1,13 +1,161 @@
+@import url("https://fonts.googleapis.com/css?family=Amatic+SC&display=swap");
+
 body {
+  font-family: "Amatic SC", cursive;
+  box-sizing: border-box;
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+  height: auto;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+  background-image: url(https://cdn.pixabay.com/photo/2016/11/07/18/19/notebook-paper-1806473_960_720.jpg);
+}
+
+.header-rec {
+  text-align: center;
+  font-size: 60px;
+}
+
+.recipe-desc {
+  font-size: 20px;
+  text-align: center;
+  padding: 10px 20px;
+}
+
+.recipe-desc:nth-of-type(even) {
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.search-form {
+  text-align: center;
+  margin-top: 20%;
+}
+
+.search-bar {
+  border: none;
+  padding: 0px 20px 0px 0;
+  background-color: transparent;
+  border-bottom: 1px solid black;
+  font-family: "Amatic SC", cursive;
+  width: 50%;
+  font-size: 30px;
+}
+
+.search-button {
+  background-color: #fefffe;
+  border-radius: 4px;
+  border: 1px solid #0a0a0a;
+  display: inline-block;
+  cursor: pointer;
+  color: #050505;
+  font-family: Arial;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 5px 30px;
+  text-decoration: none;
+  margin-left: 20px;
+  transition: 0.4s;
+  font-family: "Amatic SC", cursive;
+}
+
+.search-button:hover {
+  background-color: #030303;
+  color: white;
+}
+.search-button:active {
+  position: relative;
+  top: 1px;
+}
+
+.rec-desc {
+  text-align: center;
+}
+
+.link-rec {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  font-size: 40px;
+}
+
+.img-rec {
+  margin: 5% 8%;
+  -webkit-box-shadow: 3px 11px 15px -1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 3px 11px 15px -1px rgba(0, 0, 0, 0.75);
+  box-shadow: 3px 11px 15px -1px rgba(0, 0, 0, 0.75);
+}
+
+.list-rec {
+  list-style-type: none;
+  line-height: 30px;
+  font-size: 20px;
+  text-transform: lowercase;
+  padding: 10px 20 10px 5px;
+  text-align: left;
+}
+
+.recipe-wrap {
+  margin-top: 50px;
+  border: 5px solid black;
+}
+
+.wrap-rec {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  html {
+    background-image: none;
+  }
+
+  .img-rec {
+    margin: 5% 30%;
+  }
+}
+
+@media (min-width: 1200px) {
+  html {
+    background-image: none;
+  }
+
+  .search-form {
+    margin-top: 5%;
+  }
+
+  .rec-desc {
+    text-align: center;
+    font-size: 40px;
+  }
+
+  .link-rec {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-size: 40px;
+  }
+
+  .img-rec {
+    margin: 5% 30%;
+  }
+
+  .list-rec {
+    font-size: 30px;
+  }
+
+  .recipe-wrap {
+    width: 60%;
+    margin: 50px auto;
+  }
+}
+
+@media (min-width: 1700px) {
+  .img-rec {
+    margin: 5% 35%;
+  }
 }
